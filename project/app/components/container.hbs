@@ -1,0 +1,7 @@
+<h1>Hi</h1>
+{{#each this.range as |r|}}
+  {{#each this.range as |c|}}
+    <Display @row={{r}} @col={{c}} @box={{this.box}} @flag={{this.flag}} />
+  {{/each}}
+  <br>
+{{/each}}
